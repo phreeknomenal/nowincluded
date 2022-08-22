@@ -1,0 +1,13 @@
+<!-- <div *ngFor="let profile of profiles; let i = index;">{{profile.firstName}}</div> -->
+
+<section class="intro" *ngFor="let profile of profiles">
+    <div class="container">
+        <div class="ten columns content">
+            <h1>Hello,</h1>
+            <h1 class="user">{{profile.firstName}}</h1>
+            <p><span>Thank you for being part of our communities. Let's get to know you better!</span><br /> The only way to keep our community inclusive is to ask you a few questions. Please complete these 3 short sections.</p>
+            <input class="white space" type="button" value="Get Started">
+            <input class="black" type="button" value="I'll do it later">
+        </div>
+    </div>
+</section>

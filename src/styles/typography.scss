@@ -1,0 +1,54 @@
+/* MINION PRO FONT STYLES */
+// ============================================================================= //
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../assets/fonts/minion/MinionPro-Regular.woff2') format('woff2'),
+        url('../assets/fonts/minion/MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro Italics';
+    src: url('../assets/fonts/minion/MinionPro-It.woff2') format('woff2'),
+        url('../assets/fonts/minion/MinionPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* AGRANDIR STYLES FONT STYLES */
+// ============================================================================= //
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../assets/fonts/agrandir/Agrandir-Regular.woff2') format('woff2'),
+        url('../assets/fonts/agrandir/Agrandir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agrandir Bold';
+    src: url('../assets/fonts/agrandir/Agrandir-TextBold.woff2') format('woff2'),
+        url('../assets/fonts/agrandir/Agrandir-TextBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* GLOBAL TYPOGRAPHY STYLES */
+// ============================================================================= //
+
+// VARIABLES
+$black: #1d1d1d !default;
+$white: #fff !default;
+$blue: #287Fdd !default;
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6 {                font-family: 'Minion Pro', sans-serif; font-size: 42px; }
+h1 {                                    font-size: 72px; line-height: 72px;}
+
+p {                                     font-family: 'Agrandir', sans-serif; font-size: 18px;}

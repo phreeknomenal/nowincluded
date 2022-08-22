@@ -1,0 +1,11 @@
+div.image {                     width: 100%; height: calc(100vh - 65px); overflow: hidden; }
+div.image img {                 width: 100%; object-position: 0 -100px;}
+
+div.login {                     padding: 60px 100px;}
+div.login h1 {                  font-size: 76px; color: #287FDD;}
+div.login h1 span {             font-family: 'Minion Pro Italics', sans-serif;}
+div.login p.subtext {           font-family: 'Agrandir Bold', sans-serif; width: 60%; line-height: 36px; margin: 15px 0 25px; color: #1d1d1d;}
+div.login p.terms {             width: 60%; font-size: 12px; line-height: 28px; margin: 5px 0 20px; color: #1d1d1d;}
+div.login p.signin {            font-family: 'Agrandir Bold', sans-serif; margin: 25px 0; font-size: 16px;}
+div.login p a {                 text-decoration: none; color: #287FDD;}
+div.login p a:hover {           text-decoration: underline; color: aquamarine;}
