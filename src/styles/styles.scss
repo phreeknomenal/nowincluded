@@ -32,16 +32,19 @@ $test: #a23 !default;
 
 /* FORM STYLES */
 // LABELS
-label {                        font-family: 'Agrandir Bold', sans-serif; font-size: 12px; line-height: 12px; display: block; color: $blue;}
+label {                        font-family: 'Agrandir Bold', sans-serif; font-size: 12px; line-height: 22px; display: block; color: $blue;}
 
 // INPUTS
+input::placeholder {            color: $gray; }
 input[type="text"], input[type="email"], input[type="password"] {           
-    width: 100%; font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0; padding: 10px 10px 5px 5px; margin: 0 0 20px; border: none; border-bottom: 2px solid $black; color: $gray;
+    width: 100%; font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0; padding: 10px 10px 5px 5px; margin: 0 0 20px; border: none; border-bottom: 2px solid $black; color: $black;
 }
 input[type="password"] {            -webkit-text-security: square;}
 
 // DROPDOWNS
-.custom-select {                    position: relative; font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0;}
+.custom-select {                    position: relative; font-family: 'Agrandir', sans-serif; color: $black; font-size: 20px; line-height: 0;}
+select {                            width: calc(100% - 25px); font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0; padding: 10px 10px 5px 5px; margin: 0 0 20px; border: none; border-bottom: 2px solid $black; color: $black;}
+select::placeholder {               color: $blue;}
 
 // FORM GROUP STYLES
 form.login {
@@ -53,7 +56,6 @@ form.personal {
     input[type="text"], input[type="email"], input[type="password"] {       width: calc(100% - 40px);}
 }
 
-
 /* BUTTON STYLES */
 input[type="submit"] {              font-family: 'Agrandir Bold', sans-serif; font-size: 24px; padding: 10px 20px 8px; border: none; color: $white; background-color: $blue;}
 input[type="button"] {              font-family: 'Agrandir Bold', sans-serif; font-size: 24px; padding: 10px 20px 8px; border: none;}
@@ -61,6 +63,26 @@ input[type="button"].blue {         background-color: $blue; color: $white;}
 input[type="button"].white {        background-color: $white; color: $black;}
 input[type="button"].black {        background-color: $black; color: $white;}
 
+
+// input[type="date"] {                width: calc(100% - 40px); font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 20px; margin: 0; padding: 0;}
+input[type="date"] {
+    appearance: none;
+    width: calc(100% - 45px);
+    -webkit-appearance: none;
+    color: $black;
+    font-family: "Agrandir", arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    border: none;
+    border-bottom: 2px solid #1d1d1d;
+    background:#fff;
+    padding: 10px 10px 3px 10px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+textarea {                          width: calc(100% - 50px); height: 200px; font-family: 'Agrandir', sans-serif; font-size: 20px; padding: 10px; border: 2px solid $black; color: $black;}
+textarea::placeholder {             color: $gray;}
 
 /* HOVER STYLES */
 input[type="button"].blue:hover, input[type="button"].white:hover {           background-color: $black; color: $white;}
