@@ -31,17 +31,40 @@ $test: #a23 !default;
 .whitebg {      background-color: $white; }
 
 /* FORM STYLES */
-// form {                              background-color: $pink;}
+// LABELS
 label {                        font-family: 'Agrandir Bold', sans-serif; font-size: 12px; line-height: 12px; display: block; color: $blue;}
+
+// INPUTS
 input[type="text"], input[type="email"], input[type="password"] {           
-    width: calc(60% - 20px); font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0; padding: 10px 10px 5px 5px; margin: 0 0 20px; border: none; border-bottom: 2px solid $black; color: $gray;
+    width: 100%; font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0; padding: 10px 10px 5px 5px; margin: 0 0 20px; border: none; border-bottom: 2px solid $black; color: $gray;
 }
 input[type="password"] {            -webkit-text-security: square;}
+
+// DROPDOWNS
+.custom-select {                    position: relative; font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 0;}
+
+// FORM GROUP STYLES
+form.login {
+    input[type="text"], input[type="email"], input[type="password"] {       width: calc(60% - 20px);}
+}
+form.personal {
+    .form-control {                 width: 50%; display: inline-block; background-color: $pink;}
+    .form-control.full {            width: 100%; background-color: $test;}
+    input[type="text"], input[type="email"], input[type="password"] {       width: calc(100% - 40px);}
+}
+
+
+/* BUTTON STYLES */
 input[type="submit"] {              font-family: 'Agrandir Bold', sans-serif; font-size: 24px; padding: 10px 20px 8px; border: none; color: $white; background-color: $blue;}
 input[type="button"] {              font-family: 'Agrandir Bold', sans-serif; font-size: 24px; padding: 10px 20px 8px; border: none;}
 input[type="button"].blue {         background-color: $blue; color: $white;}
 input[type="button"].white {        background-color: $white; color: $black;}
 input[type="button"].black {        background-color: $black; color: $white;}
 
+
+/* HOVER STYLES */
+input[type="button"].blue:hover, input[type="button"].white:hover {           background-color: $black; color: $white;}
+
+
 /* TRANSITION STYLES */
-div.login p a {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+div.login p a, input[type="button"].blue, input[type="button"].white, input[type="button"].black {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}

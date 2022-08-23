@@ -25,6 +25,7 @@ export const PROFILES: Profile[] = [
             isDeleted: false,
             isBanned: false
         },
-        createdAt: new Date()
+        createdAt: new Date(),
+        completedPercent: 33
     }
 ];

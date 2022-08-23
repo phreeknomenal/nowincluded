@@ -12,6 +12,9 @@ import { SubheaderComponent } from './components/subheader/subheader.component';
 import { IntroduceComponent } from './components/introduce/introduce.component';
 import { PersonalComponent } from './pages/personal/personal.component';
 import { PersonalIntroComponent } from './components/personal-intro/personal-intro.component';
+import { ProgressComponent } from './components/progress/progress.component';
+import { PersonalQuestionsComponent } from './pages/personal-questions/personal-questions.component';
+import { PersonsComponent } from './components/persons/persons.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { PersonalIntroComponent } from './components/personal-intro/personal-int
     SubheaderComponent,
     IntroduceComponent,
     PersonalComponent,
-    PersonalIntroComponent
+    PersonalIntroComponent,
+    ProgressComponent,
+    PersonalQuestionsComponent,
+    PersonsComponent
   ],
   imports: [
     BrowserModule,

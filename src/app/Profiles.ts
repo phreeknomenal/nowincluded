@@ -23,4 +23,5 @@ export interface Profile {
         isBanned: boolean;
     };
     createdAt: Date;
+    completedPercent: number;
 }
