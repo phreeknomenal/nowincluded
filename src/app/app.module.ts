@@ -16,6 +16,12 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { PersonalQuestionsComponent } from './pages/personal-questions/personal-questions.component';
 import { PersonsComponent } from './components/persons/persons.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BackbuttonComponent } from './components/backbutton/backbutton.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ContactinfoComponent } from './components/contactinfo/contactinfo.component';
+import { ContactIntroComponent } from './components/contact-intro/contact-intro.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +36,16 @@ import { PersonsComponent } from './components/persons/persons.component';
     PersonalIntroComponent,
     ProgressComponent,
     PersonalQuestionsComponent,
-    PersonsComponent
+    PersonsComponent,
+    BackbuttonComponent,
+    ContactComponent,
+    ContactinfoComponent,
+    ContactIntroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

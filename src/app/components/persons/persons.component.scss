@@ -1,5 +1,5 @@
-section.persons {
-    .content {                  margin: 80px 0 0; background-color: #a26;}
-    h1 {                        font-family: 'Minion Pro Italics', sans-serif; color: #287FDD;}
-    h4 {                        font-family: 'Agrandir Bold', sans-serif; font-size: 24px;}
+section.persons {               position: relative;
+    .content {                  margin: 80px 0 0;}
+    h1 {                        font-family: 'Minion Pro Italics', sans-serif; margin: 0 0 10px; color: #287FDD;}
+    h4 {                        font-family: 'Agrandir Bold', sans-serif; margin: 0 0 50px; font-size: 24px;}
 }

@@ -1,4 +1,4 @@
-section.personal {
+section.contact {
     // CHILD ELEMENTS
     .content {                      margin: 27% 0 25% 20%;}
     .content h1 {                   font-family: 'Minion Pro Italics', sans-serif; color: #287FDD; margin: 0 0 20px;}
@@ -6,5 +6,5 @@ section.personal {
     .content p.subtext {            width: 40%;}
     .content p.questions {          color: #A6A6A6;}
     .image {                        width: 100%; height: calc(100vh - 65px); overflow: hidden; }
-    .image img {                    width: 100%; object-position: 0 -100px;}
+    .image img {                    width: 100%; object-position: 0 -150px;}
 }

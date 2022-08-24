@@ -51,8 +51,8 @@ form.login {
     input[type="text"], input[type="email"], input[type="password"] {       width: calc(60% - 20px);}
 }
 form.personal {
-    .form-control {                 width: 50%; display: inline-block; background-color: $pink;}
-    .form-control.full {            width: 100%; background-color: $test;}
+    .form-control {                 width: 50%; display: inline-block; }
+    .form-control.full {            width: 100%;}
     input[type="text"], input[type="email"], input[type="password"] {       width: calc(100% - 40px);}
 }
 
@@ -62,7 +62,7 @@ input[type="button"] {              font-family: 'Agrandir Bold', sans-serif; fo
 input[type="button"].blue {         background-color: $blue; color: $white;}
 input[type="button"].white {        background-color: $white; color: $black;}
 input[type="button"].black {        background-color: $black; color: $white;}
-
+input[type="submit"].continue {     position: fixed; bottom: 50px; right: 50px;}
 
 // input[type="date"] {                width: calc(100% - 40px); font-family: 'Agrandir', sans-serif; font-size: 20px; line-height: 20px; margin: 0; padding: 0;}
 input[type="date"] {
